@@ -1,0 +1,159 @@
+/* Background & Section Wrapper */
+.background-testdrive {
+  background-color: #ffffff;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Header Text Styles */
+.testdrive-content-header h6 {
+  color: #1a1cbd;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.testdrive-main-title {
+  color: #111827;
+  font-weight: 800;
+  font-size: 2.25rem;
+  letter-spacing: -0.5px;
+}
+
+.testdrive-subtitle {
+  font-size: 1.05rem;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Showroom Banner Image Card Setup */
+.testdrive-showroom-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  height: 480px;
+}
+
+.testdrive-showroom-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gradient text frame layout overlay */
+.showroom-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+  padding: 40px 30px 30px 30px;
+  color: #ffffff;
+}
+
+.showroom-card-overlay h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.showroom-card-overlay p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Premium Form Panel Interface */
+.testdrive-form-wrapper {
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  max-width: 440px;
+  width: 100%;
+  padding: 35px;
+  border-radius: 16px;
+}
+
+/* Spacing Control Configurations */
+.form-container-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-field-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Input, Select, and Date Styles */
+.form-container-layout input[type="text"],
+.form-container-layout input[type="email"],
+.form-container-layout input[type="date"],
+.form-container-layout .car-select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  color: #1f2937;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus Indicator Ring Rules */
+.form-container-layout input:focus,
+.form-container-layout .car-select:focus {
+  border-color: #1a1cbd;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(26, 26, 189, 0.08);
+}
+
+/* Premium Dynamic Action Form Trigger Button */
+.btn-test-submit {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.btn-test-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+  opacity: 0.95;
+}
+
+.btn-test-submit:active {
+  transform: translateY(0);
+}
+
+/* Responsive Adaptive Setup adjustments */
+@media (max-width: 768px) {
+  .testdrive-main-title {
+    font-size: 1.75rem;
+  }
+  .testdrive-showroom-card {
+    height: 320px;
+  }
+  .testdrive-form-wrapper {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,290 @@
+/* Core Layout Container & Base Resets */
+.car-section-wrapper {
+  background-color: #0b0f19;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Luxury Pill Header Badge */
+.car-pill-badge {
+  display: inline-block;
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  padding: 6px 16px;
+ 
+}
+
+.car-pill-badge span {
+  color: #3b82f6;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+}
+
+.car-premium-title {
+  color: #f8fafc;
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: -1px;
+  margin-top: 12px;
+}
+
+.car-premium-subtitle {
+  font-size: 1.1rem;
+  color: #94a3b8;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Advanced High-End Tab Filter Interface Controls */
+.filter-tab-bar {
+  background: #151d30;
+  border: 1px solid #1e293b;
+  padding: 6px;
+
+  display: flex;
+  gap: 4px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.filter-btn:hover {
+  color: #ffffff;
+}
+
+.filter-btn.active {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+}
+
+/* Premium Structured Visual Cards Layout Wrapper */
+.car-premium-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+ 
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.car-display-box {
+  position: relative;
+  overflow: hidden;
+  background-color: #0c111d;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.vehicle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Smart Status Floating Badges UI Elements */
+.category-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 14px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  backdrop-filter: blur(8px);
+}
+
+.tag-sports {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.tag-electric {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Interactive Card Body Container Hierarchy Rules */
+.car-details-body {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.vehicle-title-name {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin-bottom: 6px;
+}
+
+.vehicle-segment-desc {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/* Micro Performance Metric Nodes Dashboard Grid */
+.vehicle-perf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background: #151d30;
+  border: 1px solid #1e293b;
+
+  padding: 16px 8px;
+}
+
+.perf-metric-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.perf-icon-wrapper {
+  color: #3b82f6;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  opacity: 0.9;
+}
+
+.perf-value-text {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  line-height: 1.2;
+}
+
+.perf-label-text {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* Call to Action Navigation Bottom Bar Footer Layout */
+.card-action-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #1f2937;
+  cursor: pointer;
+}
+
+.action-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  transition: color 0.3s ease;
+}
+
+.action-arrow-circle {
+  width: 40px;
+  height: 40px;
+  background: #1f2937;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.arrow-btn-icon {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Component Dynamic Global Hover Interactions */
+.car-premium-card:hover {
+  transform: translateY(-8px);
+  border-color: #2563eb;
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+}
+
+.car-premium-card:hover .vehicle-image {
+  transform: scale(1.06);
+}
+
+.car-premium-card:hover .action-text {
+  color: #3b82f6;
+}
+
+.car-premium-card:hover .action-arrow-circle {
+  background: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.car-premium-card:hover .arrow-btn-icon {
+  color: #ffffff;
+  transform: translateX(2px);
+}
+
+/* Simple Entrance Render Animations CSS */
+.animate-card {
+  animation: cardEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes cardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Structural Layout Overrides */
+@media (max-width: 768px) {
+  .car-premium-title {
+    font-size: 2.25rem;
+  }
+  .vehicle-image {
+    height: 200px;
+  }
+  .car-details-body {
+    padding: 20px;
+  }
+}
+
+.favourite-icon-wishlist {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 2rem;
+  opacity: 0.9;
+}
