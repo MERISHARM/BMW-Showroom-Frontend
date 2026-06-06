@@ -7,7 +7,7 @@ import Home from './Pages/Home'
 import Index from './Pages/Index'
 import Sidebar from './components/Sidebar'
 import Viewfiles from './Pages/Viewfiles'
-import Newarrivals from './components/newarrivals'
+import Newarrivals from "./components/Newarrivals";
 import Testdrive from './Pages/Testdrive'
 import Car from './Pages/Car'
 import Wishlist from './Pages/Wishlist'
