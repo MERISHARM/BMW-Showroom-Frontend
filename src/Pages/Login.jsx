@@ -142,6 +142,7 @@ const Login = () => {
   return (
     <>
       {/* Back Button */}
+      
       <div className="back-button-container">
         <div className="container">
           <a href="/home" className="back-link">
@@ -149,9 +150,9 @@ const Login = () => {
           </a>
         </div>
       </div>
-
-      {/* Main Login Section */}
-      <div className="login-section-wrapper">
+<div className="row">
+        <div className="cols">
+ <div className="login-section-wrapper">
         <div className="login-container">
           <div className="login-row">
             {/* Left Column - Form */}
@@ -386,15 +387,22 @@ const Login = () => {
             </div>
 
             {/* Right Column - Image (covers entire right side) */}
-            <div className="login-col-image">
-              <div className="image-content">
-                <img src={loginImg} alt="BMW M Logo" />
-                               </div>
-              </div>
+           
             </div>
           </div>
         </div>
       
+        </div>
+        <div className="cols">
+           <div className="login-col-image">
+              <div className="image-content">
+                <img src={loginImg} alt="BMW M Logo" />
+                               </div>
+              </div>
+        </div>
+      </div>
+      {/* Main Login Section */}
+     
     </>
   );
 };
