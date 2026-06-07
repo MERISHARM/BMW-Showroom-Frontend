@@ -4,7 +4,7 @@ import bmwghost from "../assets/bmwghost.mp4"
 import bmwm5 from '../assets/bmwm5.mp4'
 import girldrive from '../assets/girldrive.mp4'
 import video2 from '../assets/video2.mp4'
-import Newarrivals from '../components/newarrivals'
+import Newarrivals from '../components/Newarrivals'
 import Footer from '../components/Footer'
 
 const Home = () => {
